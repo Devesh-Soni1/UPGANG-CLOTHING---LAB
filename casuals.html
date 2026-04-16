@@ -17,7 +17,7 @@
             background: #fff;
         }
 
-        /* --- Left Section (Controls) --- */
+       
         .controls {
             flex: 1;
             display: flex;
@@ -44,7 +44,7 @@
         .cat-name { font-size: 10px; text-transform: uppercase; color: #888; }
         .item-name { font-size: 18px; font-weight: bold; margin: 5px 0; }
 
-        /* --- Right Section (AI Preview) --- */
+     
         .preview-box {
             flex: 1.3;
             background-color: var(--preview-bg);
@@ -137,15 +137,15 @@
         document.getElementById('shirt-label').innerText = inventory.shirts[currentShirt - 1];
         document.getElementById('pants-label').innerText = inventory.pants[currentPants - 1];
 
-        // --- DYNAMIC PATH (PNG FIXED) ---
+        
         const modelView = document.getElementById('model-view');
         
-        // Humne yahan .png kar diya hai kyunki aapka screenshot PNG hai
+       
         const path = "images_casual/s" + currentShirt + "_p" + currentPants + ".png";
         
         modelView.src = path;
 
-        // Visual Feedback
+     
         modelView.style.opacity = '0.5';
         setTimeout(() => { modelView.style.opacity = '1'; }, 200);
 
